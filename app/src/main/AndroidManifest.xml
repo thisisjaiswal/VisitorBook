@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lawazia.visitorbook" >
+
+    <uses-permission
+        android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".DetailActivity"
+            android:label="Attendance"
+            android:parentActivityName=".HomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
+
+        <activity
+            android:name="com.lawazia.yourid.EnterMobileStep"
+            android:label="Login" >
+        </activity>
+        <activity
+            android:name="com.lawazia.yourid.EnterPINStep"
+            android:label="Login" >
+        </activity>
+        <activity
+            android:name="com.lawazia.yourid.EnterCodeStep"
+            android:label="Login" >
+        </activity>
+        <activity
+            android:name="com.lawazia.yourid.SetNameStep"
+            android:label="Login" >
+        </activity>
+        <activity
+            android:name="com.lawazia.yourid.SetPINStep"
+            android:label="Login" >
+        </activity>
+
+
+    </application>
+
+</manifest>
